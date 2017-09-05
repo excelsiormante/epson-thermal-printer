@@ -34,11 +34,11 @@ function printReceipt(req, res) {
   thermal_printer.newLine();
   thermal_printer.tableCustom([
     { text: 'Cashier: ', align:"LEFT", width: 0.50},
-    { text: req.body.cashier, align:"RIGHT", width: 0.25, bold:true}
+    { text: req.body.cashier, align:"LEFT", width: 0.25, bold:true}
   ]);
   thermal_printer.tableCustom([
     { text: 'Receipt #', align:"LEFT", width: 0.50},
-    { text: padNumber(req.body.id, 12) , align:"RIGHT", width: 0.25, bold:true}
+    { text: padNumber(req.body.id, 12) , align:"LEFT", width: 0.25, bold:true}
   ]);
   thermal_printer.println('========================================');
   thermal_printer.alignLeft();
@@ -64,7 +64,7 @@ function printReceipt(req, res) {
       },
       { 
         text: totalAmount,
-        align:"RIGHT", 
+        align:"LEFT", 
         width: 0.20 
       }
     ]);

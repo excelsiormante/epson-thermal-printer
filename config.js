@@ -1,11 +1,7 @@
 const config = {
   receipt: {
   	header: 
-	  `Society Eight Concept Stores
-	  MJDL RETAIL ENTERPRISE
-	  2nd Floor Torre de Santo Tomas
-	  870 M.F. Jhocson, Sampaloc, Manila
-	  1015 Metro Manila`,
+	  `Society Eight Concept Stores\nMJDL RETAIL ENTERPRISE\n2nd Floor Torre de Santo Tomas\n870 M.F. Jhocson, Sampaloc, Manila\n1015 Metro Manila`,
 	tin: 'xxx-xxx-xxx-xxx'
   },
   printer: {
